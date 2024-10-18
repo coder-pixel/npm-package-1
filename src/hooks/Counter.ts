@@ -12,7 +12,11 @@ const useCounter = () => {
     setCount(count - 1);
   };
 
-  return { count, increment, decrement };
+  const incrementByTwo = () => {
+    setCount(count + 2);
+  };
+
+  return { count, increment, decrement, incrementByTwo };
 };
 
 export { useCounter };
