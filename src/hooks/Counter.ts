@@ -4,11 +4,12 @@ const useCounter = () => {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCount((prev) => prev++);
+    setCount(count + 1);
   };
 
   const decrement = () => {
-    setCount((prev) => prev--);
+    console.log("sassuikc");
+    setCount(count - 1);
   };
 
   return { count, increment, decrement };
