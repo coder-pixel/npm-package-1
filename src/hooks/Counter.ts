@@ -8,7 +8,6 @@ const useCounter = () => {
   };
 
   const decrement = () => {
-    console.log("sassuikc");
     setCount(count - 1);
   };
 
@@ -16,7 +15,11 @@ const useCounter = () => {
     setCount(count + 2);
   };
 
-  return { count, increment, decrement, incrementByTwo };
+  const decrementByTwo = () => {
+    setCount(count - 2);
+  };
+
+  return { count, increment, decrement, incrementByTwo, decrementByTwo };
 };
 
 export { useCounter };
